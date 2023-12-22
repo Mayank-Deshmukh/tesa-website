@@ -143,7 +143,7 @@ h6 {
   font-weight: 600;
   color: #474242;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.3s; 
 }
 
 .navbar a i,
@@ -159,7 +159,6 @@ h6 {
 .navbar li:hover>a {
   color: #1c587d;
   padding-right: 10px;
-  border-bottom: 1px #3c3c3c;
 }
 
 .navbar .getstarted,
