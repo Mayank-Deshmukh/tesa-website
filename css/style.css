@@ -8,7 +8,7 @@ body {
 }
 
 .slide-in {
-  animation: slideIn 2s ease forwards;
+  animation: slideIn 3s ease forwards;
   opacity: 0;
 }
 @keyframes rotateLogo {
