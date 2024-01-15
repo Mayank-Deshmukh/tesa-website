@@ -1,40 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
   <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/tesalogo.png" type="">
 
-  <title> Homepage</title>
+  <title>Homepage</title>
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-  <!-- fonts style -->
+  <!-- Other stylesheets and scripts -->
+
+  <!-- Fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Owl slider stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Font Awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Responsive style -->
+  <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
-<body  style="color : rgb(0, 0, 0)">
+<body style="color: rgb(0, 0, 0)">
 
   <div class="hero_area">
 
@@ -44,93 +46,103 @@
       </div>
     </div>
 
-    <!-- header section strats -->
+    <!-- header section starts -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container fixed-top">
           <a class="navbar-brand" href="index.html">
-            <img src="images/tesalogo.png" style="height: 70px; padding: 5px;"> <!-- Added 'px' unit to the padding values -->
+            <img src="images/tesalogo.png" style="height: 70px; padding: 5px;">
             <span style="font-family:  Cambria; font-size: 32px;">
               TESA
             </span>
-          </a>          
-         
-
+          </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html" style="font-family:'serif ;"> <i class="fa fa-home"> Home</i><span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav">
+              <li class="nav-item" to="#home" style="transition: 2s;">
+                <a class="nav-link" href="" style="font-family: 'Arial', sans-serif; font-weight: bold;">
+                  <i class="fa fa-comments-o"></i> Home
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html" style="font-family:'serif; "><i class="fa fa-comments-o"> About</i> </a>
+              <li class="nav-item" to="#about">
+                <a class="nav-link" href="" style="font-family: 'Arial', sans-serif; font-weight: bold;">
+                  <i class="fa fa-comments-o"></i> About
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html" style="font-family:'serif  "> <i class="fa fa-trophy"> EVENTS</i></a>
+              <li class="nav-item" to="#event">
+                <a class="nav-link" href="events.html" style="font-family: 'Arial', sans-serif; font-weight: bold;">
+                  <i class="fa fa-trophy"></i> EVENTS
+                </a>
               </li>
-             <!-- <li class="nav-item">
-                <a class="nav-link" href="why.html" style="font-family:'serif "><i class="fa fa-question"> Why Us </i></a>
-              </li>-->
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="font-family:'serif  "><i class="fa fa-phone "></i> Contact </a>
+              <li class="nav-item"to="#contact">
+                <a class="nav-link" href="#" style="font-family: 'Arial', sans-serif; font-weight: bold;">
+                  <i class="fa fa-phone"></i> Contact
+                </a>
               </li>
-              <li class="nav-item dropdown"> <!-- Add the 'dropdown' class to the list item -->
-                <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family:'serif ">
-                  Domains </i>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false"
+                  style="font-family: 'Arial', sans-serif; font-weight: bold;">
+                  Domains
                 </a>
                 <div class="dropdown-menu" aria-labelledby="teamDropdown">
-                  <!--<a class="dropdown-item" href="team-member1.html" style="font-family: Algerian ;">Core</a> -->
-                  <a class="dropdown-item" href="Technical.html" style="font-family: Algerian ">  Technical</a>
-                  <a class="dropdown-item" href="Sports.html" style="font-family: Algerian ">Sports</a>
-                  <a class="dropdown-item" href="T&P.html" style="font-family: Algerian ">T&P</a>
-                  <a class="dropdown-item" href="Cultural.html" style="font-family: Algerian ">Cultural</a>
-                  <a class="dropdown-item" href="Media.html" style="font-family: Algerian ">Media</a>
-                  <a class="dropdown-item" href="Social.html" style="font-family: Algerian ">Social</a>
-                  <!-- Add more dropdown items as needed -->
+                  <a class="dropdown-item" href="Technical.html"
+                    style="font-family: 'Arial', sans-serif; font-weight: bold;">Technical</a>
+                  <a class="dropdown-item" href="Sports.html"
+                    style="font-family: 'Arial', sans-serif; font-weight: bold;">Sports</a>
+                  <a class="dropdown-item" href="T&P.html"
+                    style="font-family: 'Arial', sans-serif; font-weight: bold;">T&P</a>
+                  <a class="dropdown-item" href="Cultural.html"
+                    style="font-family: 'Arial', sans-serif; font-weight: bold;">Cultural</a>
+                  <a class="dropdown-item" href="Media.html"
+                    style="font-family: 'Arial', sans-serif; font-weight: bold;">Media</a>
+                  <a class="dropdown-item" href="Social.html"
+                    style="font-family: 'Arial', sans-serif; font-weight: bold;">Social</a>
                 </div>
               </li>
-              
             </ul>
+
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
+
     <!-- slider section -->
-    <section class="slider_section ">
-      <!--<div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">-->
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box"> 
-                    <p style="font-size: 28px; animation: slideIn 1s ease; font-weight: bold ; ">Welcome to AISSMS IOIT's</p>
-                    <h1 class="slide-in" style="font-size: 72px;font-weight: bold; font-family: times new roman;">
-                      TESA
-                    </h1>
-                    <p style="animation: slideIn 4s ease;font-size: 18px;font-weight: bold; font-family: times new roman">presented by</p> <h5 style="color: rgb(18, 116, 11); animation: slideIn 4s ease; font-size: 24px; font-style:italic;font-weight: bold;">Electronics and Telecommunication Department</h5>
-                    <p style="animation: slideIn 5s ease; font-size: 18px; font-family: times new roman">-- where innovation meets tradition </p>
-                    <!--<div class="btn-box">
-                      <a href="" class="btn1" style="animation: fadeIn 4s ease;font-family: serif">
-                        Know More
-                      </a>
-                    </div>-->
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <div class="img-box" style="animation: slideout 4s ease;">
-                    <img src="images/tesalogo.png" alt="">
-                  </div>
-                </div>
+    <section class="slider_section" id="home">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="detail-box">
+              <p style="font-size: 28px; animation: slideIn 1s ease; font-weight: bold ; ">Welcome to AISSMS IOIT's</p>
+              <h1 class="slide-in" style="font-size: 72px;font-weight: bold; font-family: times new roman;">
+                TESA
+              </h1>
+              <p style="animation: slideIn 4s ease;font-size: 18px;font-weight: bold; font-family: times new roman">
+                presented by</p>
+              <h5
+                style="color: rgb(18, 116, 11); animation: slideIn 4s ease; font-size: 24px; font-style:italic;font-weight: bold;">
+                Electronics and Telecommunication Department</h5>
+              <p style="animation: slideIn 5s ease; font-size: 18px; font-family: times new roman">-- where innovation
+                meets tradition </p>
+              <div class="btn-box">
+                <a href="" class="btn1" style="animation: fadeIn 4s ease;font-family: serif">
+                  Know More
+                </a>
               </div>
             </div>
           </div>
+          <div class="col-md-5">
+            <div class="img-box" style="animation: slideout 4s ease;">
+              <img src="images/tesalogo.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- end slider section -->
-    </div>
-    <!-- service section -->
-  <section class="service_section layout_padding">
+  </section>
+  <!-- end slider section -->
+  </div>
+  <!-- service section -->
+  <section class="service_section layout_padding" id="event">
     <div class="service_container">
       <div class="container ">
         <div class="heading_container heading_center">
@@ -138,7 +150,9 @@
             Our <span>Event Highlights</span>
           </h2>
           <p>
-            Expeirence the perfect blend of Culture,Technology,Athleticism at our captivating events , where innovation meets tradition in a spectacular showcase of talent and passsion join us on exhilarating journey through the reamls of Culture, Techonology and Sports.
+            Expeirence the perfect blend of Culture,Technology,Athleticism at our captivating events , where innovation
+            meets tradition in a spectacular showcase of talent and passsion join us on exhilarating journey through the
+            reamls of Culture, Techonology and Sports.
           </p>
         </div>
         <div class="row">
@@ -216,14 +230,15 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding">
+  <section class="about_section layout_padding" id="about">
     <div class="container  ">
       <div class="heading_container heading_center">
         <h2>
           About <span>Us</span>
         </h2>
         <p>
-          Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum ipsum voluptatibus
+          Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum ipsum
+          voluptatibus
         </p>
       </div>
       <div class="row">
@@ -238,10 +253,18 @@
               We Are Tesa
             </h3>
             <p>
-              Telecom Engineer Students Association (TESA) was first established in the year 2012 under the Electronics and Telecommunication Engineering Department (ENTC), AISSMS IOIT. This committee was established under the guidance of respective Principal sir, department HOD, TESA chairperson(s) and other faculty members for the maximum participation, overall development of students which involved showcasing their talent and providing them a platform to reveal their hidden potentials and skills through various domains like Technical, Cultural and Sports. Like every year students from Electronics and Telecommunication Department and also from other departments and AISSMS Society.
+              Telecom Engineer Students Association (TESA) was first established in the year 2012 under the Electronics
+              and Telecommunication Engineering Department (ENTC), AISSMS IOIT. This committee was established under the
+              guidance of respective Principal sir, department HOD, TESA chairperson(s) and other faculty members for
+              the maximum participation, overall development of students which involved showcasing their talent and
+              providing them a platform to reveal their hidden potentials and skills through various domains like
+              Technical, Cultural and Sports. Like every year students from Electronics and Telecommunication Department
+              and also from other departments and AISSMS Society.
             </p>
             <p>
-              TESA Events were generally held for two days under the brand event name “VERITAS” which means “TRUTH” where the committee basically looked after the     realistic development of the students in uplifting their talent.</p>
+              TESA Events were generally held for two days under the brand event name “VERITAS” which means “TRUTH”
+              where the committee basically looked after the realistic development of the students in uplifting their
+              talent.</p>
             <a href=""> Read More </a>
           </div>
         </div>
@@ -251,7 +274,7 @@
   <!-- end about section -->
 
   <!-- why section -->
-  <section class="why_section layout_padding">
+  <section class="why_section layout_padding" id="acheivements">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -268,8 +291,11 @@
               TeleScan magzine
             </h5>
             <p>
-              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
-              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi
+              corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia
+              id, aspernatur nihil.
+              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis
+              possimus animi autem natus
             </p>
           </div>
         </div>
@@ -282,8 +308,11 @@
               Alacrity report 2022-23
             </h5>
             <p>
-              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
-              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi
+              corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia
+              id, aspernatur nihil.
+              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis
+              possimus animi autem natus
             </p>
           </div>
         </div>
@@ -296,8 +325,11 @@
               Student Acheivements
             </h5>
             <p>
-              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
-              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi
+              corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia
+              id, aspernatur nihil.
+              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis
+              possimus animi autem natus
             </p>
           </div>
         </div>
@@ -496,7 +528,7 @@
                   Administrator
                 </h5>
                 <p>
-                 Administrator
+                  Administrator
                 </p>
               </div>
               <div class="social_box">
@@ -617,7 +649,8 @@
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis </p>
               </div>
             </div>
           </div>
@@ -639,7 +672,8 @@
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis </p>
               </div>
             </div>
           </div>
@@ -661,7 +695,8 @@
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis </p>
               </div>
             </div>
           </div>
@@ -683,7 +718,8 @@
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis </p>
               </div>
             </div>
           </div>
@@ -696,7 +732,7 @@
 
   <!-- info section -->
 
-  <section class="info_section layout_padding2">
+  <section class="info_section layout_padding2" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 info_col">
@@ -746,7 +782,8 @@
               Info
             </h4>
             <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+              words, combined with a handful
             </p>
           </div>
         </div>
@@ -795,18 +832,23 @@
   <section class="footer_section">
     <div class="container">
       <p style="color: rgb(255, 255, 255);">
-        &copy; <span id="displayYear" style="color: rgb(255, 255, 255);"> By Mayank Deshmukh</span> 
+        &copy; <span id="displayYear" style="color: rgb(255, 255, 255);"> By Mayank Deshmukh</span>
         <a href="https://html.design/">By Mayank Deshmukh</a>
       </p>
     </div>
   </section>
   <!-- footer section -->
+  <!-- Bootstrap JS (placed at the end of the body for faster page loading) -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
   <!-- bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <!-- owl slider -->
@@ -820,5 +862,5 @@
   <!-- End Google Map -->
 
 </body>
-</html>
 
+</html>
