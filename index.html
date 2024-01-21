@@ -41,7 +41,35 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
+<style>
+  .nav-item {
+    position: relative;
+  }
 
+  .dropdown-toggle {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: black;
+  }
+
+  .dropdown-menu {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+  }
+
+  .dropdown-item {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  .dropdown-item:hover {
+    color: #fdfeff;
+    background-color: #333 ;
+    font-size: large;
+  }
+</style>
 <body style="color: rgb(0, 0, 0)">
   <div class="hero_area">
     <div class="hero_bg_box">
@@ -52,7 +80,7 @@
     <!-- header section starts -->
     <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container navbar-light bg-light custom_nav-container fixed-top" style="background-color: rgba(255, 255, 255, 0.5);">          <a class="navbar-brand" href="index.html">
+        <nav class="navbar navbar-expand-lg custom_nav-container custom_nav-container fixed-top" style="background-color: rgba(255, 255, 255, 0.116);">          <a class="navbar-brand" href="index.html">
             <img src="images/tesalogo.png" style="height: 70px; padding: 5px;">
             <span style="font-family:  Cambria; font-size: 32px;">
               TESA
@@ -82,16 +110,16 @@
                   <i class="fa fa-phone"></i> Contact</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Arial', sans-serif; font-weight: bold; color: black;">
+                <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Domains
                 </a>
-                <div class="dropdown-menu p-3" aria-labelledby="teamDropdown" style="background-color: #f8f9fa; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                  <a class="dropdown-item font-weight-bold" href="technical.html" style="color: #007bff;">Technical</a>
-                  <a class="dropdown-item font-weight-bold" href="sports.html" style="color: #28a745;">Sports</a>
-                  <a class="dropdown-item font-weight-bold" href="tandp.html" style="color: #dc3545;">T&P</a>
-                  <a class="dropdown-item font-weight-bold" href="cultural.html" style="color: #ffc107;">Cultural</a>
-                  <a class="dropdown-item font-weight-bold" href="media.html" style="color: #17a2b8;">Media</a>
-                  <a class="dropdown-item font-weight-bold" href="social.html" style="color: #6610f2;">Social</a>
+                <div class="dropdown-menu p-3" aria-labelledby="teamDropdown">
+                  <a class="dropdown-item" href="domains/Technical.html">Technical</a>
+                  <a class="dropdown-item" href="domains/sports.html">Sports</a>
+                  <a class="dropdown-item" href="domains/tnp.html">T&P</a>
+                  <a class="dropdown-item" href="domains/cultural.html">Cultural</a>
+                  <a class="dropdown-item" href="domains/media.html">Media</a>
+                  <a class="dropdown-item" href="domains/social.html">Social</a>
                 </div>
               </li>
               
@@ -229,7 +257,6 @@
   <!-- end service section -->
 
   <!-- about section -->
-
   <section class="about_section layout_padding" id="about">
     <div class="container  ">
       <div class="heading_container heading_center">
@@ -760,9 +787,5 @@
   </script>
   <!-- custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
 </body>
 </html>
