@@ -609,7 +609,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #12740B;
+  background-color: #ffffff;
 }
 
 .service_section {
@@ -812,14 +812,14 @@ a:focus {
 }
 
 .why_section .btn-box a:hover {
-  background-color: #007fa4;
+  background-color: #4d5152;
 }
 
 /*team section */
 .team_section {
   text-align: center;
-  background-color: #2c7d5686;
-  color: #000000;
+  background-color: #000000d1;
+  color: #ffffff;
 }
 
 .team_section .heading_container {
@@ -833,15 +833,25 @@ a:focus {
 }
 
 .team_section .team_container .box {
-  padding: 35px 0 0 0;
-  border-radius: 5px;
+  padding: 20px;
+  height: 350px;
+  width: 280px;
+  border-radius: 15px;
   overflow: hidden;
-  -webkit-transition: all .1s;
-  transition: all .1s;
+  transition: all 0.3s ease; /* Improved transition timing */
   margin-top: 45px;
-  background: -webkit-gradient (linear, left top, left bottom, from(#0e0000c9), to(#0000004d));
-  background: linear-gradient(to bottom, #9bf9b1, #000000ca);
+  box-shadow: 0 14px 18px rgba(51, 136, 59, 0.551); /* Adding a subtle box shadow for depth */
+  background-image: url(../images/hod_card.png);
+  background-size: cover; /* Using cover to maintain aspect ratio and cover the entire box */
+  background-position: center; /* Center the background image */
 }
+
+/* Optional: Add hover effect */
+.team_section .team_container .box:hover {
+  transform: scale(1.05); /* Slightly scale up on hover for a subtle effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the box shadow on hover */
+}
+
 
 .team_section .team_container .box .img-box {
   display: -webkit-box;
@@ -906,8 +916,9 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px;
+  margin: 15px;
 }
+
 
 .client_section .box .img-box {
   position: relative;
@@ -920,15 +931,14 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100px;
-  height: 50;
+  width: 160px;
   margin-bottom: -50px;
   margin-left: 25px;
   position: relative;
 }
 
 .client_section .box .img-box img {
-  border-radius: 100%;
+  border-radius: 80%;
 }
 
 .client_section .box .client_id {
@@ -953,14 +963,13 @@ a:focus {
 }
 
 .client_section .box .detail-box {
-  background-color: #a7e29c;
-  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(39, 227, 6, 0.3);
   padding: 75px 25px 25px 25px;
 }
 
 .client_section .box .detail-box i {
-  color: #5624ee;
+  color: #00204a;
   margin-bottom: 10px;
 }
 
@@ -968,53 +977,29 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 45px;
 }
-.client_section .owl-carousel .owl-nav .owl-prev {
-  width: 55px;
-  height: 55px;
-  background-color: #000000f3;
-  color: #eacc7b;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  outline: none;
-  bottom: 0px;
-  font-size: 24px;
-  -webkit-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.25);
-}
 
+.client_section .owl-carousel .owl-nav .owl-prev,
 .client_section .owl-carousel .owl-nav .owl-next {
   width: 55px;
   height: 55px;
-  background-color:#000000f3;
-  color: #eacc7b;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
   outline: none;
   bottom: 0px;
   font-size: 24px;
-  -webkit-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
 }
 
-.client_section .owl-carousel .owl-nav .owl-prev:hover {
-    color: #000000;
-    background-color: #ffffff; /* Change to the background color you prefer */
-    transform: translateY(-5px); 
-    transform: translateX(-10px);/* Adjust the Y value as needed */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
-
+.client_section .owl-carousel .owl-nav .owl-prev:hover,
 .client_section .owl-carousel .owl-nav .owl-next:hover {
-  color: #000000;
-  background-color: #ffffff; /* Change to the background color you prefer */
-  transform: translateY(-5px); 
-  transform: translateX(10px);/* Adjust the Y value as needed */
-  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  color: #00204a;
 }
-
 
 /* client section end */
 .info_section {

@@ -33,74 +33,73 @@
 
   <!-- Responsive style -->
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 
 <body style="color: rgb(0, 0, 0)">
-
   <div class="hero_area">
-
     <div class="hero_bg_box">
       <div class="bg_img_box">
         <img src="" alt="">
       </div>
     </div>
-
     <!-- header section starts -->
     <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container fixed-top">
-          <a class="navbar-brand" href="index.html">
+        <nav class="navbar navbar-expand-lg custom_nav-container navbar-light bg-light custom_nav-container fixed-top" style="background-color: rgba(255, 255, 255, 0.5);">          <a class="navbar-brand" href="index.html">
             <img src="images/tesalogo.png" style="height: 70px; padding: 5px;">
             <span style="font-family:  Cambria; font-size: 32px;">
               TESA
             </span>
           </a>
+      
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+      
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item" to="#home" style="transition: 2s;">
-                <a class="nav-link" href="" style="font-family: 'Arial', sans-serif; font-weight: bold;">
-                  <i class="fa fa-comments-o"></i> Home
-                </a>
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" onclick="scrollToSection('#home')" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                  <i class="fa fa-comments-o"></i> Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item" to="#about">
-                <a class="nav-link" href="" style="font-family: 'Arial', sans-serif; font-weight: bold;">
-                  <i class="fa fa-comments-o"></i> About
-                </a>
+              <li class="nav-item">
+                <a class="nav-link"  onclick="scrollToSection('#about')" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                  <i class="fa fa-comments-o"></i> About</a>
               </li>
-              <li class="nav-item" to="#event">
-                <a class="nav-link" href="events.html" style="font-family: 'Arial', sans-serif; font-weight: bold;">
-                  <i class="fa fa-trophy"></i> EVENTS
-                </a>
+              <li class="nav-item">
+                <a class="nav-link" onclick="scrollToSection('#event')" style="font-family: 'Arial', sans-serif; font-weight: bold; cursor:pointer">
+                  <i class="fa fa-trophy"></i> EVENTS</a>
               </li>
-              <li class="nav-item"to="#contact">
-                <a class="nav-link" href="#" style="font-family: 'Arial', sans-serif; font-weight: bold;">
-                  <i class="fa fa-phone"></i> Contact
-                </a>
+              <li class="nav-item">
+                <a class="nav-link" onclick="scrollToSection('#contact')" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                  <i class="fa fa-phone"></i> Contact</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false"
-                  style="font-family: 'Arial', sans-serif; font-weight: bold;">
+                <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Arial', sans-serif; font-weight: bold; color: black;">
                   Domains
                 </a>
-                <div class="dropdown-menu" aria-labelledby="teamDropdown">
-                  <a class="dropdown-item" href="Technical.html"
-                    style="font-family: 'Arial', sans-serif; font-weight: bold;">Technical</a>
-                  <a class="dropdown-item" href="Sports.html"
-                    style="font-family: 'Arial', sans-serif; font-weight: bold;">Sports</a>
-                  <a class="dropdown-item" href="T&P.html"
-                    style="font-family: 'Arial', sans-serif; font-weight: bold;">T&P</a>
-                  <a class="dropdown-item" href="Cultural.html"
-                    style="font-family: 'Arial', sans-serif; font-weight: bold;">Cultural</a>
-                  <a class="dropdown-item" href="Media.html"
-                    style="font-family: 'Arial', sans-serif; font-weight: bold;">Media</a>
-                  <a class="dropdown-item" href="Social.html"
-                    style="font-family: 'Arial', sans-serif; font-weight: bold;">Social</a>
+                <div class="dropdown-menu p-3" aria-labelledby="teamDropdown" style="background: rgba(254, 254, 254, 0.589); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                  <a class="dropdown-item font-weight-bold" href="technical.html" style="color: black;">Technical</a>
+                  <a class="dropdown-item font-weight-bold" href="sports.html" style="color: black;">Sports</a>
+                  <a class="dropdown-item font-weight-bold" href="tandp.html" style="color: black;">T&P</a>
+                  <a class="dropdown-item font-weight-bold" href="cultural.html" style="color: black;">Cultural</a>
+                  <a class="dropdown-item font-weight-bold" href="media.html" style="color: black;">Media</a>
+                  <a class="dropdown-item font-weight-bold" href="social.html" style="color: black;">Social</a>
                 </div>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToSection('#contact')" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                  <i class=""></i> Membership
+                </a>
+              </li>
             </ul>
-
           </div>
         </nav>
       </div>
@@ -218,7 +217,7 @@
           </div>
         </div>
         <div class="btn-box">
-          <a href="">
+          <a href="events.html">
             View All
           </a>
         </div>
@@ -355,18 +354,7 @@
       <div class="team_container">
         <div class="row">
           <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-1.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Chair Person
-                </h5>
-                <p>
-                  Chair Person
-                </p>
-              </div>
+            <div class="box"> 
               <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -388,17 +376,6 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
-              <div class="img-box">
-                <img src="images/team-2.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  vice Chair Person
-                </h5>
-                <p>
-                  vice Chair Person
-                </p>
-              </div>
               <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -420,17 +397,6 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
-              <div class="img-box">
-                <img src="images/team-3.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  President
-                </h5>
-                <p>
-                  President
-                </p>
-              </div>
               <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -449,20 +415,8 @@
                 </a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
+          </div>          <div class="col-lg-3 col-sm-6">
             <div class="box ">
-              <div class="img-box">
-                <img src="images/team-4.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Vice-President
-                </h5>
-                <p>
-                  Vice-President
-                </p>
-              </div>
               <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -481,24 +435,8 @@
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="team_container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
+          </div>          <div class="col-lg-3 col-sm-6">
             <div class="box ">
-              <div class="img-box">
-                <img src="images/team-1.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Secretary
-                </h5>
-                <p>
-                  Secretary
-                </p>
-              </div>
               <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -517,20 +455,8 @@
                 </a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
+          </div>          <div class="col-lg-3 col-sm-6">
             <div class="box ">
-              <div class="img-box">
-                <img src="images/team-2.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Administrator
-                </h5>
-                <p>
-                  Administrator
-                </p>
-              </div>
               <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -549,20 +475,8 @@
                 </a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
+          </div>          <div class="col-lg-3 col-sm-6">
             <div class="box ">
-              <div class="img-box">
-                <img src="images/team-3.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Earl Martinez
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
               <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -581,20 +495,8 @@
                 </a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
+          </div>          <div class="col-lg-3 col-sm-6">
             <div class="box ">
-              <div class="img-box">
-                <img src="images/team-4.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Josephine Allard
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
               <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -626,7 +528,7 @@
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
         <h2>
-          What says our <span>Customers</span>
+          Thoughts of Our <span>STUDENTS</span>
         </h2>
       </div>
       <div class="carousel-wrap ">
@@ -634,92 +536,88 @@
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <img src="images/client1.jpg" alt="" class="box-img">
+                <img src="images/Avantika_Technical.png" alt="" class="box-img">
               </div>
               <div class="detail-box">
                 <div class="client_id">
                   <div class="client_info">
                     <h6>
-                      LusDen
+                      Avantika Shende
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                      BE Entc
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <img src="images/client2.jpg" alt="" class="box-img">
+                <img src="images/gaurav_tech.png" alt="" class="box-img">
               </div>
               <div class="detail-box">
                 <div class="client_id">
                   <div class="client_info">
                     <h6>
-                      Zen Court
+                      Gaurav Pisal
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                      TE Entc
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <img src="images/client1.jpg" alt="" class="box-img">
+                <img src="images/Mayank.png" alt="" class="box-img">
               </div>
               <div class="detail-box">
                 <div class="client_id">
                   <div class="client_info">
                     <h6>
-                      LusDen
+                      Mayank Deshmukh
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                      SE Entc
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <img src="images/client2.jpg" alt="" class="box-img">
+                <img src="images/Atharv_tech.png" alt="" class="box-img">
               </div>
               <div class="detail-box">
                 <div class="client_id">
                   <div class="client_info">
                     <h6>
-                      Zen Court
+                      TE
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                      EnTC
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
               </div>
             </div>
           </div>
@@ -832,12 +730,21 @@
   <section class="footer_section">
     <div class="container">
       <p style="color: rgb(255, 255, 255);">
-        &copy; <span id="displayYear" style="color: rgb(255, 255, 255);"> By Mayank Deshmukh</span>
-        <a href="https://html.design/">By Mayank Deshmukh</a>
+        &copy; <span id="displayYear" style="color: rgb(255, 255, 255);"> By TESA Tech team</span>
+        <a href="">By TESA Tech team</a>
       </p>
     </div>
   </section>
   <!-- footer section -->
+
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
   <!-- Bootstrap JS (placed at the end of the body for faster page loading) -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
@@ -860,7 +767,10 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-
+  <style>
+    .dropdown-item:hover {
+      background-color: #2a6338b0; /* Change to your desired hover background color */
+    }
+  </style>
 </body>
-
 </html>
