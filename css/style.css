@@ -848,7 +848,7 @@ a:focus {
 
 /* Optional: Add hover effect */
 .team_section .team_container .box:hover {
-  transform: scale(1.05); /* Slightly scale up on hover for a subtle effect */
+  transform: scale(1.15); /* Slightly scale up on hover for a subtle effect */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the box shadow on hover */
 }
 
@@ -866,7 +866,7 @@ a:focus {
 }
 
 .team_section .team_container .box .img-box img {
-  width: 120px;
+  width: 100px;
   border-radius: 100%;
   border: 5px solid #ffffff;
 }
@@ -931,14 +931,14 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 160px;
+  width: 120px;
   margin-bottom: -50px;
   margin-left: 25px;
   position: relative;
 }
 
 .client_section .box .img-box img {
-  border-radius: 80%;
+  border-radius: 100%;
 }
 
 .client_section .box .client_id {
