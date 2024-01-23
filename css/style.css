@@ -363,7 +363,7 @@ a:focus {
   padding: 0;
   min-height: 75px;
   backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
-  background-color: rgba(239, 239, 239, 0.606); /* Add a semi-transparent background color for better visibility */
+  background-color: rgba(255, 255, 255, 0.776); /* Add a semi-transparent background color for better visibility */
 }
 
 
@@ -818,7 +818,7 @@ a:focus {
 /*team section */
 .team_section {
   text-align: center;
-  background-color: #000000d1;
+  background-color: #000000;
   color: #ffffff;
 }
 
