@@ -1,0 +1,62 @@
+.nav-item {
+    position: relative;
+  }
+
+  .dropdown-toggle {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: black;
+  }
+
+  .dropdown-menu {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.359);
+    border: none;
+  }
+
+  .dropdown-item {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  .dropdown-item:hover {
+    color: #007f0b;
+    font-size: large;
+  }
+  .company {
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+/* Optional: Adjust the perspective for a more pronounced 3D effect */
+#companyCarousel {
+    perspective: 1000px;
+}
+
+
+
+.custom-banner {
+    background-color: #007bff;
+    color: #ffffff;
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    padding: 0px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .custom-banner:hover {
+    background-color: #0056b3;
+  }
