@@ -41,9 +41,59 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
+<style>
+  .event-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 14px 18px rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .event-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .event-card-body {
+    padding: 30px;
+  }
+
+  .event-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .event-card-description {
+    margin-bottom: 15px;
+  }
+
+  .register-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .event-card:hover {
+    box-shadow: 0 18px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.15);
+  }
+
+  .event-card:hover .register-btn {
+    background-color: #0056b3;
+  }
+
+</style>
 <body style="color: rgb(0, 0, 0);">
 
-<div class="hero_area">
+
     <!-- header section starts -->
     <header class="header_section">
       <div class="container-fluid">
@@ -140,8 +190,6 @@
   </section>
   <!-- end slider section -->
 
-</div>
-
 <section class="banner-section text-center" style="background-color: #333; background-size: cover; background-position: center; color: #fff; padding: 50px;">
   <h1 class="display-4 font-weight-bold"><span>OUR TEAM</span></h1>
 </section> 
@@ -179,6 +227,32 @@
     </div>
   </div>
  
+  <div class="client_section" >
+      <div class="carousel-wrap">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item" style="display:flex;justify-content:center">
+            <div class="box">
+              <img src="./images/Atharv_tech.png" style="height: 400px; width:300px">
+            </div>
+          </div>
+          <div class="item" style="display:flex;justify-content:center">
+            <div class="box">
+              <img src="./images/Atharv_tech.png" style="height: 400px; width:300px">
+            </div>
+          </div>
+          <div class="item" style="display:flex;justify-content:center">
+            <div class="box">
+              <img src="./images/Atharv_tech.png" style="height: 400px; width:300px">
+            </div>
+          </div>
+          <div class="item" style="display:flex;justify-content:center">
+            <div class="box">
+              <img src="./images/Atharv_tech.png" style="height: 400px; width:300px">
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
   <!-- add the excetutives caroauasla here  -->
 
 </section>
@@ -197,64 +271,37 @@
             reamls of Culture, Techonology and Sports.
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  ALACRITY
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
-                </p>
-                <a href="">
-                  Read More
-                </a>
+        <div class="row" style="margin-top: 60px;">
+
+          <div class="col-md-4">
+            <div class="event-card">
+              <img src="./mystercoders.jpg" alt="Event 1">
+              <div class="event-card-body">
+                <h5 class="event-card-title">Mystery Coders</h5>
+                <p class="event-card-description">blind coding event</p>
+                <button class="register-btn">Register</button>
               </div>
             </div>
           </div>
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  VERITAS
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
-                </p>
-                <a href="">
-                  Read More
-                </a>
+
+          <div class="col-md-4">
+            <div class="event-card">
+              <img src="./mystercoders.jpg" alt="Event 1">
+              <div class="event-card-body">
+                <h5 class="event-card-title">Mystery Coders</h5>
+                <p class="event-card-description">blind coding event</p>
+                <button class="register-btn">Register</button>
               </div>
             </div>
           </div>
+
           <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  TESA
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
-                </p>
-                <a href="">
-                  Read More
-                </a>
+            <div class="event-card">
+              <img src="./mystercoders.jpg" alt="Event 1">
+              <div class="event-card-body">
+                <h5 class="event-card-title">Mystery Coders</h5>
+                <p class="event-card-description">blind coding event</p>
+                <button class="register-btn">Register</button>
               </div>
             </div>
           </div>
