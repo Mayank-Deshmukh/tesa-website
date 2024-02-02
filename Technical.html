@@ -89,6 +89,43 @@
   .event-card:hover .register-btn {
     background-color: #0056b3;
   }
+  /*** Testimonial ***/
+.testimonial-carousel .owl-dots {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #DDDDDD;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--primary);
+}
+
+.testimonial-carousel .owl-item.center {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-carousel .owl-item .testimonial-item {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: #FFFFFF !important;
+    box-shadow: 0 0 30px #DDDDDD;
+}
 
 </style>
 <body style="color: rgb(0, 0, 0);">
@@ -230,29 +267,46 @@
   <div class="client_section" >
       <div class="carousel-wrap">
         <div class="owl-carousel client_owl-carousel">
-          <div class="item" style="display:flex;justify-content:center">
-            <div class="box">
-              <img src="./images/Atharv_tech.png" style="height: 400px; width:300px">
+          <div class="item card" style="transform: translate(-50%, 0%); box-shadow: 0 5px 20px rgba(5, 66, 22, 0.6)">
+            <div class="card-image">
+              <img src="./images/gaurav_tech.png" alt="profile two" class="img-fluid">
+            </div>
+            <div class="details">
+              <h2>Gaurav Pisal</h2>
+              <p class="job-title">Joint Technical Secretary</p>
             </div>
           </div>
-          <div class="item" style="display:flex;justify-content:center">
-            <div class="box">
-              <img src="./images/Atharv_tech.png" style="height: 400px; width:300px">
+          <div class="item card" style="transform: translate(-50%, 0%); box-shadow: 0 5px 20px rgba(5, 66, 22, 0.6)">
+            <div class="card-image">
+              <img src="./images/gaurav_tech.png" alt="profile two" class="img-fluid">
+            </div>
+            <div class="details">
+              <h2>Gaurav Pisal</h2>
+              <p class="job-title">Joint Technical Secretary</p>
             </div>
           </div>
-          <div class="item" style="display:flex;justify-content:center">
-            <div class="box">
-              <img src="./images/Atharv_tech.png" style="height: 400px; width:300px">
+          <div class="item card" style="transform: translate(-50%, 0%); box-shadow: 0 5px 20px rgba(5, 66, 22, 0.6)">
+            <div class="card-image">
+              <img src="./images/gaurav_tech.png" alt="profile two" class="img-fluid">
+            </div>
+            <div class="details">
+              <h2>Gaurav Pisal</h2>
+              <p class="job-title">Joint Technical Secretary</p>
             </div>
           </div>
-          <div class="item" style="display:flex;justify-content:center">
-            <div class="box">
-              <img src="./images/Atharv_tech.png" style="height: 400px; width:300px">
+          <div class="item card" style="transform: translate(-50%, 0%); box-shadow: 0 5px 20px rgba(5, 66, 22, 0.6)">
+            <div class="card-image">
+              <img src="./images/gaurav_tech.png" alt="profile two" class="img-fluid">
+            </div>
+            <div class="details">
+              <h2>Gaurav Pisal</h2>
+              <p class="job-title">Joint Technical Secretary</p>
             </div>
           </div>
         </div>
       </div>
   </div>
+
   <!-- add the excetutives caroauasla here  -->
 
 </section>

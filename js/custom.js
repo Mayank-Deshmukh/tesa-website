@@ -10,29 +10,26 @@ getYear();
 
 // client section owl carousel
 $(".client_owl-carousel").owlCarousel({
-    loop: true,
-    margin: 20,
-    dots: false,
-    nav: true,
-    navText: [],
-    autoplay: true,
-    autoplayHoverPause: true,
-    navText: [
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-    ],
+    items: 3, // Display three items at a time
+    margin: 10, // Adjust margin between items as needed
+    loop: true, // Enable loop for continuous sliding
+    nav: false, // Enable navigation arrows
+    dots: true, // Disable pagination dots (optional)
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
     responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 2
-        },
-        1000: {
-            items: 2
-        }
+      0: {
+        items: 1, // Display one item on small screens
+      },
+      768: {
+        items: 2, // Display two items on medium screens
+      },
+      992: {
+        items: 3, // Display three items on large screens
+      }
     }
-});
+  });
 
 
 
