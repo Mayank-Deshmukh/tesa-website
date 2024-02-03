@@ -135,11 +135,11 @@ body {
     line-height: 1.5;
   }
 
-#more {
+.more {
     display: none;
 }
 
-#readMoreBtn {
+.readMoreBtn {
     background-color: #0f110f;
     color: white;
     border: none;

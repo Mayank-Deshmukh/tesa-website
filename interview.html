@@ -43,10 +43,10 @@
 </head>
 
 <script>
-  function toggleReadMore() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("readMoreBtn");
+  function toggleReadMore(index) {
+    var dots = document.getElementsByClassName("dots")[index];
+    var moreText = document.getElementsByClassName("more")[index];
+    var btnText = document.getElementsByClassName("readMoreBtn")[index];
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
@@ -273,10 +273,10 @@
             </div>
             <div class="comment-text">
               <p id="commentContent">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
-                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span class = "dots">...</span>
+                <span class = "more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
               </p>
-              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+              <button onclick="toggleReadMore(0)" class = "readMoreBtn">Read More</button>
             </div>
           </div>
         </div>
@@ -294,10 +294,10 @@
             </div>
             <div class="comment-text">
               <p id="commentContent">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
-                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span class = "dots">...</span>
+                <span class = "more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
               </p>
-              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+              <button onclick="toggleReadMore(1)" class = "readMoreBtn">Read More</button>
             </div>
           </div>
         </div>
@@ -315,10 +315,10 @@
             </div>
             <div class="comment-text">
               <p id="commentContent">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
-                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span class = "dots">...</span>
+                <span class = "more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
               </p>
-              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+              <button onclick="toggleReadMore(2)" class = "readMoreBtn">Read More</button>
             </div>
           </div>
         </div>
@@ -336,10 +336,10 @@
             </div>
             <div class="comment-text">
               <p id="commentContent">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
-                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span class = "dots">...</span>
+                <span class = "more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
               </p>
-              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+              <button onclick="toggleReadMore(3)" class = "readMoreBtn">Read More</button>
             </div>
           </div>
         </div>
@@ -357,10 +357,10 @@
             </div>
             <div class="comment-text">
               <p id="commentContent">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
-                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span class = "dots">...</span>
+                <span class = "more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
               </p>
-              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+              <button onclick="toggleReadMore(4)" class = "readMoreBtn">Read More</button>
             </div>
           </div>
         </div>
@@ -378,10 +378,10 @@
             </div>
             <div class="comment-text">
               <p id="commentContent">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
-                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span class = "dots">...</span>
+                <span class = "more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
               </p>
-              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+              <button onclick="toggleReadMore(5)" class = "readMoreBtn">Read More</button>
             </div>
           </div>
         </div>
@@ -399,10 +399,10 @@
             </div>
             <div class="comment-text">
               <p id="commentContent">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
-                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span class = "dots">...</span>
+                <span class = "more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
               </p>
-              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+              <button onclick="toggleReadMore(6)" class="readMoreBtn">Read More</button>
             </div>
           </div>
         </div>
