@@ -68,6 +68,7 @@
     color: #007f0b;
     font-size: large;
   }
+
   .event-card {
     border: none;
     border-radius: 15px;
@@ -120,313 +121,382 @@
 <body style="color: rgb(0, 0, 0)">
 
 
-    <!-- header section starts -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container custom_nav-container fixed-top" style="background-color: rgba(83, 85, 84, 0.538);">
-          <a class="navbar-brand" href="index.html">
-           <img src="images/tesalogo.png" style="height: 70px; padding: 5px;">
-           <span style="font-family:  Cambria; font-size: 32px;">
-             TESA
-           </span>
-         </a>
-     
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <i class="fa fa-bars rotate" style="font-size: 30px;"></i>
-         </button>
-     
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav">
-             <li class="nav-item active">
-               <a class="nav-link" href="index.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-                 <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link"  href="index.html" onclick="scrollToSection('#about')" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-                 <i class="fa fa-user"></i> About</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" onclick="scrollToSection('#event')" style="font-family: 'Arial', sans-serif; font-weight: bold; cursor:pointer">
-                 <i class="fa fa-trophy"></i> EVENTS</a>
-             </li>
-             <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Domains
-               </a>
-               <div class="dropdown-menu p-3" aria-labelledby="teamDropdown">
-                 <a class="dropdown-item" href="Technical.html">Technical</a>
-                 <a class="dropdown-item" href="sports.html">Sports</a>
-                 <a class="dropdown-item" href="tnp.html">T&P</a>
-                 <a class="dropdown-item" href="cultural.html">Cultural</a>
-                 <a class="dropdown-item" href="media.html">Media</a>
-                 <a class="dropdown-item" href="social.html">Social</a>
-               </div>
-             </li>
-             
-             <li class="nav-item">
-               <a class="nav-link" href="interview.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-                  Interveiw Exp</a>
-             </li>
+  <!-- header section starts -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container custom_nav-container fixed-top" style="background-color: rgba(255, 255, 255, 0.495);">
+         <a class="navbar-brand" href="index.html">
+          <img src="images/tesalogo.png" style="height: 70px; padding: 5px;">
+          <span style="font-family:  Cambria; font-size: 32px;">
+            TESA
+          </span>
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars rotate" style="font-size: 30px;"></i>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" onclick="scrollToSection('#home')" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  onclick="scrollToSection('#about')" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                <i class="fa fa-user"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToSection('#event')" style="font-family: 'Arial', sans-serif; font-weight: bold; cursor:pointer">
+                <i class="fa fa-trophy"></i> EVENTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Domains
+              </a>
+              <div class="dropdown-menu p-3" aria-labelledby="teamDropdown">
+                <a class="dropdown-item" href="domains/Technical.html">Technical</a>
+                <a class="dropdown-item" href="domains/sports.html">Sports</a>
+                <a class="dropdown-item" href="domains/tnp.html">T&P</a>
+                <a class="dropdown-item" href="domains/cultural.html">Cultural</a>
+                <a class="dropdown-item" href="domains/media.html">Media</a>
+                <a class="dropdown-item" href="domains/social.html">Social</a>
+                <a class="dropdown-item" href="domains/studycircle.html">Study Circle</a>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="interview.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                 Interveiw Exp</a>
+            </li>
 
-             <li class="nav-item">
-               <a class="nav-link" href="startup.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-                 <i class=""></i>Startup</a>
-             </li>
-           </ul>
-         </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
+            <li class="nav-item">
+              <a class="nav-link" href="startup.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                <i class=""></i>Startup</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
 
-    <!-- slider section -->
-    <section class="slider_section" id="home">
-      <div class="container ">
-        <div class="row" >
-          <div class="col-md-4">
-            <div class="img-box" style="animation: slideout 4s ease;">
-              <img src="images/100 +.png" alt="">
-            </div>
+  <!-- slider section -->
+  <section class="slider_section" id="home">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="img-box" style="animation: slideout 4s ease;">
+            <img src="images/100 +.png" alt="">
           </div>
-          <div class="col-md-4">
-            <div class="img-box" style="animation: slideout 4s ease;">
-              <img src="images/20.png" alt="">
-            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-box" style="animation: slideout 4s ease;">
+            <img src="images/20.png" alt="">
           </div>
-          <div class="col-md-4">
-            <div class="img-box" style="animation: slideout 4s ease;">
-              <img src="images/3.png" alt="">
-            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-box" style="animation: slideout 4s ease;">
+            <img src="images/3.png" alt="">
           </div>
         </div>
       </div>
+    </div>
   </section>
   <!-- end slider section -->
 
 
-<div>
-  <section class="banner-section text-center" style="background-color: #333; background-size: cover; background-position: center; color: #fff; padding: 50px;">
-    <h1 class="display-4 font-weight-bold"><span>OUR EVENTS</span></h1>
-  </section>
+  <div>
+    <section class="banner-section text-center"
+      style="background-color: #333; background-size: cover; background-position: center; color: #fff; padding: 50px;">
+      <h1 class="display-4 font-weight-bold"><span>OUR EVENTS</span></h1>
+    </section>
 
-  <div class="container mt-5">
-    <div class="row mb-5">
-      <!-- Event Card 1 -->
-      <div class="col-md-4 mb-5">
-        <div class="event-card">
-          <img src="./mystercoders.jpg" alt="Event 1">
-          <div class="event-card-body">
-            <h5 class="event-card-title">Mystery Coders</h5>
-            <p class="event-card-description">blind coding event</p>
-            <button class="register-btn">Register</button>
+    <div class="container mt-5">
+      <div class="row mb-5">
+        <!-- Event Card 1 -->
+        <div class="col-md-4 mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Mystery coders-technical.jpg" alt="Event 1">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Mystery Coders</h5>
+              <p class="event-card-description">Blind coding event</p>
+              <button class="register-btn">Register</button>
+            </div>
           </div>
         </div>
+
+        <!-- Event Card 2 -->
+        <div class="col-md-4 mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Roborush-technical.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Roborush</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 3 -->
+        <div class="col-md-4 mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Innovator desk-technical.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Innovator Desk</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 4 -->
+        <div class="col-md-4 mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Badminton-sports.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Badminton</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 5 -->
+        <div class="col-md-4 mb-5 ">
+          <div class="event-card">
+            <img src="./images/Events/BGAS-sports.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Battle Grounds</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 6 -->
+        <div class="col-md-4  mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Athletics-sports.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Athletics</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 7 -->
+        <div class="col-md-4  mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Chess-sports.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Chess</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 8 -->
+        <div class="col-md-4  mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Table tennis-sports.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Table Tennis</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 9 -->
+        <div class="col-md-4  mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Deadlift-sports.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Dead-Lift</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 10 -->
+        <div class="col-md-4  mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Incredible-cultural.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Incredible</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 11 -->
+        <div class="col-md-4  mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Shiny colors-cultural.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Shiny Colours</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 12 -->
+        <div class="col-md-4  mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Scared games-cultural.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Sacred Games</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 13 -->
+        <div class="col-md-4  mb-5">
+          <div class="event-card">
+            <img src="./images/Events/Worthy words-cultural.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Worthy Words</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 14 -->
+        <div class="col-md-4  mb-5">
+          <div class="event-card">
+            <img src="./images/Events/mission unblockable-tnpsc.jpg" alt="Event 2">
+            <div class="event-card-body">
+              <h5 class="event-card-title">Mission Unblockable</h5>
+              <p class="event-card-description">Description for Event 2 goes here.</p>
+              <button class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+        <!-- Add more Event Cards here (repeat the structure) -->
+
       </div>
 
-      <!-- Event Card 2 -->
-      <div class="col-md-4 mb-5">
-        <div class="event-card">
-          <img src="./roborush.jpg" alt="Event 2">
-          <div class="event-card-body">
-            <h5 class="event-card-title">Event 2</h5>
-            <p class="event-card-description">Description for Event 2 goes here.</p>
-            <button class="register-btn">Register</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-5">
-        <div class="event-card">
-          <img src="./roborush.jpg" alt="Event 2">
-          <div class="event-card-body">
-            <h5 class="event-card-title">Event 2</h5>
-            <p class="event-card-description">Description for Event 2 goes here.</p>
-            <button class="register-btn">Register</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-5">
-        <div class="event-card">
-          <img src="event2.jpg" alt="Event 2">
-          <div class="event-card-body">
-            <h5 class="event-card-title">Event 2</h5>
-            <p class="event-card-description">Description for Event 2 goes here.</p>
-            <button class="register-btn">Register</button>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4 mb-5 ">
-        <div class="event-card">
-          <img src="event2.jpg" alt="Event 2">
-          <div class="event-card-body">
-            <h5 class="event-card-title">Event 2</h5>
-            <p class="event-card-description">Description for Event 2 goes here.</p>
-            <button class="register-btn">Register</button>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4  mb-5">
-        <div class="event-card">
-          <img src="event2.jpg" alt="Event 2">
-          <div class="event-card-body">
-            <h5 class="event-card-title">Event 2</h5>
-            <p class="event-card-description">Description for Event 2 goes here.</p>
-            <button class="register-btn">Register</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4  mb-5">
-        <div class="event-card">
-          <img src="event2.jpg" alt="Event 2">
-          <div class="event-card-body">
-            <h5 class="event-card-title">Event 2</h5>
-            <p class="event-card-description">Description for Event 2 goes here.</p>
-            <button class="register-btn">Register</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4  mb-5">
-        <div class="event-card">
-          <img src="event2.jpg" alt="Event 2">
-          <div class="event-card-body">
-            <h5 class="event-card-title">Event 2</h5>
-            <p class="event-card-description">Description for Event 2 goes here.</p>
-            <button class="register-btn">Register</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4  mb-5">
-        <div class="event-card">
-          <img src="event2.jpg" alt="Event 2">
-          <div class="event-card-body">
-            <h5 class="event-card-title">Event 2</h5>
-            <p class="event-card-description">Description for Event 2 goes here.</p>
-            <button class="register-btn">Register</button>
-          </div>
-        </div>
-      </div>
-      <!-- Add more Event Cards here (repeat the structure) -->
+      <!-- Repeat the row structure for more rows if needed -->
 
     </div>
+  </div>
 
-    <!-- Repeat the row structure for more rows if needed -->
-
-  </div>  
-</div>
-
-<div>
-  <!-- info section -->
-  <section class="info_section layout_padding2" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
+  <div>
+    <!-- info section -->
+    <section class="info_section layout_padding2" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 info_col">
+            <div class="info_contact">
+              <h4>
+                Address
+              </h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>
+                    Location
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    Call +01 1234567890
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    demo@gmail.com
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
               <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
               <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
               <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
           </div>
-          <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-              words, combined with a handful
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="" href="service.html">
-                Services
-              </a>
-              <a class="" href="why.html">
-                Why Us
-              </a>
-              <a class="" href="team.html">
-                Team
-              </a>
+          <div class="col-md-6 col-lg-3 info_col">
+            <div class="info_detail">
+              <h4>
+                Info
+              </h4>
+              <p>
+                necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+                words, combined with a handful
+              </p>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
+          <div class="col-md-6 col-lg-2 mx-auto info_col">
+            <div class="info_link_box">
+              <h4>
+                Links
+              </h4>
+              <div class="info_links">
+                <a class="active" href="index.html">
+                  Home
+                </a>
+                <a class="" href="about.html">
+                  About
+                </a>
+                <a class="" href="service.html">
+                  Services
+                </a>
+                <a class="" href="why.html">
+                  Why Us
+                </a>
+                <a class="" href="team.html">
+                  Team
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 info_col ">
+            <h4>
               Subscribe
-            </button>
-          </form>
+            </h4>
+            <form action="#">
+              <input type="text" placeholder="Enter email" />
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- end info section -->
+    </section>
+    <!-- end info section -->
 
-  <!-- footer section -->
-  <section class="footer_section">
-    <div class="container">
-      <p style="color: rgb(255, 255, 255);">
-        &copy; <span id="displayYear" style="color: rgb(255, 255, 255);"> By TESA Tech team</span>
-        <a href="">By TESA Tech team</a>
-      </p>
-    </div>
-  </section>
-</div>
+    <!-- footer section -->
+    <section class="footer_section">
+      <div class="container">
+        <p style="color: rgb(255, 255, 255);">
+          &copy; <span id="displayYear" style="color: rgb(255, 255, 255);"> By TESA Tech team</span>
+          <a href="">By TESA Tech team</a>
+        </p>
+      </div>
+    </section>
+  </div>
 
   <!-- footer section -->
 
@@ -457,4 +527,5 @@
   <!-- custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
 </body>
+
 </html>

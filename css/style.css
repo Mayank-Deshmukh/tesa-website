@@ -816,7 +816,8 @@ a:focus {
 }
 
 .team_section .team_container {
-  padding: 0 15px;
+  padding: 40px;
+  align-items: center;
 }
 
 .team_section .team_container .box {
@@ -956,7 +957,7 @@ a:focus {
 }
 
 .client_section .box .detail-box i {
-  color: #00204a;
+  color: #004a0e;
   margin-bottom: 10px;
 }
 
@@ -985,7 +986,7 @@ a:focus {
 
 .client_section .owl-carousel .owl-nav .owl-prev:hover,
 .client_section .owl-carousel .owl-nav .owl-next:hover {
-  color: #00204a;
+  color: #004a05;
 }
 
 /* client section end */

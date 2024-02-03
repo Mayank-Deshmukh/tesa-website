@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -42,93 +41,113 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
-<style>
-  .nav-item {
-    position: relative;
-  }
 
-  .dropdown-toggle {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    color: black;
-  }
+<script>
+  function toggleReadMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("readMoreBtn");
 
-  .dropdown-menu {
-    background-color: #f8f9fa;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.359);
-    border: none;
-  }
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        moreText.style.display = "none";
+        btnText.innerHTML = "Read More";
+    } else {
+        dots.style.display = "none";
+        moreText.style.display = "inline";
+        btnText.innerHTML = "Read Less";
+    }
+}
+</script>
 
-  .dropdown-item {
-    font-weight: bold;
-    color: #333;
-    transition: color 0.3s ease;
-  }
+  <style>
+    .nav-item {
+      position: relative;
+    }
 
-  .dropdown-item:hover {
-    color: #007f0b;
-    font-size: large;
-  }
-</style>
+    .dropdown-toggle {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      color: black;
+    }
+
+    .dropdown-menu {
+      background-color: #f8f9fa;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.359);
+      border: none;
+    }
+
+    .dropdown-item {
+      font-weight: bold;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .dropdown-item:hover {
+      color: #007f0b;
+      font-size: large;
+    }
+  </style>
 <body style="color: rgb(0, 0, 0)">
-<!-- header section starts -->
-<header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container custom_nav-container fixed-top" style="background-color: rgba(255, 255, 255, 0.495);">
-           <a class="navbar-brand" href="index.html">
-            <img src="images/tesalogo.png" style="height: 70px; padding: 5px;">
-            <span style="font-family:  Cambria; font-size: 32px;">
-              TESA
-            </span>
-          </a>
-      
-          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars rotate" style="font-size: 30px; color: black;"></i>
+  <!-- header section starts -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container custom_nav-container fixed-top" style="background-color: rgba(255, 255, 255, 0.495);">
+         <a class="navbar-brand" href="index.html">
+          <img src="images/tesalogo.png" style="height: 70px; padding: 5px;">
+          <span style="font-family:  Cambria; font-size: 32px;">
+            TESA
+          </span>
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars rotate" style="font-size: 30px;"></i>
         </button>
-      
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-                  <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="index.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-                  <i class="fa fa-user"></i> About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html" style="font-family: 'Arial', sans-serif; font-weight: bold; cursor:pointer">
-                  <i class="fa fa-trophy"></i> EVENTS</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Domains
-                </a>
-                <div class="dropdown-menu p-3" aria-labelledby="teamDropdown">
-                  <a class="dropdown-item" href="Technical.html">Technical</a>
-                  <a class="dropdown-item" href="sports.html">Sports</a>
-                  <a class="dropdown-item" href="tnp.html">T&P</a>
-                  <a class="dropdown-item" href="cultural.html">Cultural</a>
-                  <a class="dropdown-item" href="media.html">Media</a>
-                  <a class="dropdown-item" href="social.html">Social</a>
-                </div>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="interview.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-                  <i class="fa fa-phone"></i> Interveiw Exp</a>
-              </li>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" onclick="scrollToSection('#home')" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  onclick="scrollToSection('#about')" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                <i class="fa fa-user"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToSection('#event')" style="font-family: 'Arial', sans-serif; font-weight: bold; cursor:pointer">
+                <i class="fa fa-trophy"></i> EVENTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Domains
+              </a>
+              <div class="dropdown-menu p-3" aria-labelledby="teamDropdown">
+                <a class="dropdown-item" href="domains/Technical.html">Technical</a>
+                <a class="dropdown-item" href="domains/sports.html">Sports</a>
+                <a class="dropdown-item" href="domains/tnp.html">T&P</a>
+                <a class="dropdown-item" href="domains/cultural.html">Cultural</a>
+                <a class="dropdown-item" href="domains/media.html">Media</a>
+                <a class="dropdown-item" href="domains/social.html">Social</a>
+                <a class="dropdown-item" href="domains/studycircle.html">Study Circle</a>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="interview.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                 Interveiw Exp</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="startup.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-                  <i class=""></i>Startup</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-</header>
-<!-- end header section -->
+            <li class="nav-item">
+              <a class="nav-link" href="startup.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                <i class=""></i>Startup</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
   
   <!-- service section -->
   <section class="service_section layout_padding" id="event">
@@ -152,7 +171,7 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  5000+ Students placed
+                  500+ Students placed
                 </h5>
                 <p>
                   fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -207,7 +226,7 @@
           </div>
         </div>
         <div class="btn-box" >
-          <a href="events.html" >
+          <a href="https://aissmsioit.org/t-p-cell/about-tp-cell/" >
             View Placement Report
           </a>
         </div>
@@ -239,103 +258,161 @@
     <strong>OUR Top Interveiw Experiences</strong> 
   </div>
 
-<section>
-    <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="comment-tile">
-              <div class="user-info">
-                <div class="user-details">
-                  <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
-                  <div>
-                    <span class="user-name">Mayank Deshmukh </span>  at  
-                    <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
-                  </div>
+  <section>
+      <div class="container">
+        <div class="col-12">
+          <div class="comment-tile">
+            <div class="user-info">
+              <div class="user-details">
+                <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
+                <div>
+                  <span class="user-name">Mayank Deshmukh </span>  at  
+                  <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
                 </div>
               </div>
-              <div class="comment-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum, dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!
-              </div>
+            </div>
+            <div class="comment-text">
+              <p id="commentContent">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
+                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+              </p>
+              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
             </div>
           </div>
-
-          <div class="col-12">
-            <div class="comment-tile">
-              <div class="user-info">
-                <div class="user-details">
-                  <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
-                  <div>
-                    <span class="user-name">Mayank Deshmukh </span>  at  
-                    <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
-                  </div>
-                </div>
-              </div>
-              <div class="comment-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum, dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12">
-            <div class="comment-tile">
-              <div class="user-info">
-                <div class="user-details">
-                  <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
-                  <div>
-                    <span class="user-name">Mayank Deshmukh </span>  at  
-                    <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
-                  </div>
-                </div>
-              </div>
-              <div class="comment-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum, dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12">
-            <div class="comment-tile">
-              <div class="user-info">
-                <div class="user-details">
-                  <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
-                  <div>
-                    <span class="user-name">Mayank Deshmukh </span>  at  
-                    <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
-                  </div>
-                </div>
-              </div>
-              <div class="comment-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum, dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12">
-            <div class="comment-tile">
-              <div class="user-info">
-                <div class="user-details">
-                  <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
-                  <div>
-                    <span class="user-name">Mayank Deshmukh </span>  at  
-                    <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
-                  </div>
-                </div>
-              </div>
-              <div class="comment-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum, dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!
-              </div>
-            </div>
-          </div>
-          
-          <!-- Add more comment tiles as needed -->
         </div>
-      </div> 
-</section>
 
+        <div class="col-12">
+          <div class="comment-tile">
+            <div class="user-info">
+              <div class="user-details">
+                <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
+                <div>
+                  <span class="user-name">Mayank Deshmukh </span>  at  
+                  <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
+                </div>
+              </div>
+            </div>
+            <div class="comment-text">
+              <p id="commentContent">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
+                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+              </p>
+              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+            </div>
+          </div>
+        </div>
 
-<section class="about_section layout_padding" id="about" style="background-color: #282f29;">
+        <div class="col-12">
+          <div class="comment-tile">
+            <div class="user-info">
+              <div class="user-details">
+                <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
+                <div>
+                  <span class="user-name">Mayank Deshmukh </span>  at  
+                  <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
+                </div>
+              </div>
+            </div>
+            <div class="comment-text">
+              <p id="commentContent">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
+                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+              </p>
+              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="comment-tile">
+            <div class="user-info">
+              <div class="user-details">
+                <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
+                <div>
+                  <span class="user-name">Mayank Deshmukh </span>  at  
+                  <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
+                </div>
+              </div>
+            </div>
+            <div class="comment-text">
+              <p id="commentContent">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
+                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+              </p>
+              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="comment-tile">
+            <div class="user-info">
+              <div class="user-details">
+                <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
+                <div>
+                  <span class="user-name">Mayank Deshmukh </span>  at  
+                  <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
+                </div>
+              </div>
+            </div>
+            <div class="comment-text">
+              <p id="commentContent">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
+                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+              </p>
+              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="comment-tile">
+            <div class="user-info">
+              <div class="user-details">
+                <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
+                <div>
+                  <span class="user-name">Mayank Deshmukh </span>  at  
+                  <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
+                </div>
+              </div>
+            </div>
+            <div class="comment-text">
+              <p id="commentContent">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
+                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+              </p>
+              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="comment-tile">
+            <div class="user-info">
+              <div class="user-details">
+                <img src="./images/icons8-home.gif" alt="User Avatar" class="user-avatar">
+                <div>
+                  <span class="user-name">Mayank Deshmukh </span>  at  
+                  <span class="user-name" style="text-decoration: underline;">&nbsp;Deloitte USI</span>
+                </div>
+              </div>
+            </div>
+            <div class="comment-text">
+              <p id="commentContent">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio autem pariatur laudantium sequi voluptatibus. Odio doloribus accusamus suscipit ex fuga animi corrupti eveniet error, voluptatum quam amet accusantium nam molestiae ab quibusdam rerum fugiat ipsum, non deleniti iste iure! Blanditiis autem aperiam molestiae ipsa, consequatur hic laborum, rerum,<span id="dots">...</span>
+                <span id="more"> dolore nulla sunt illum doloribus eum? Sit quod, doloribus quis quam earum odio, quaerat totam quae exercitationem excepturi eaque dolorum. Asperiores dolorem accusamus, impedit aperiam veniam error consequuntur repellendus autem iste quia omnis. Amet illo distinctio reiciendis tempore eaque excepturi culpa aut est odit et quasi voluptatum, cum labore cumque optio!</span>
+              </p>
+              <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="about_section layout_padding" id="about" style="background-color: #282f29;">
     <h1 style="text-align: center;color:#f8f9fa">can add some text here if u want to </h1>
   </section>
+
   <!-- info section -->
   <section class="info_section layout_padding2" id="contact">
     <div class="container">
