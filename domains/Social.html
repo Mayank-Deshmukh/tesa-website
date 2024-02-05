@@ -89,15 +89,16 @@
   .event-card:hover .register-btn {
     background-color: #0056b3;
   }
+
   /*** Testimonial ***/
-.testimonial-carousel .owl-dots {
+  .testimonial-carousel .owl-dots {
     margin-top: 15px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-}
+  }
 
-.testimonial-carousel .owl-dot {
+  .testimonial-carousel .owl-dot {
     position: relative;
     display: inline-block;
     margin: 0 5px;
@@ -106,214 +107,252 @@
     background: #DDDDDD;
     border-radius: 2px;
     transition: .5s;
-}
+  }
 
-.testimonial-carousel .owl-dot.active {
+  .testimonial-carousel .owl-dot.active {
     width: 30px;
     background: var(--primary);
-}
+  }
 
-.testimonial-carousel .owl-item.center {
+  .testimonial-carousel .owl-item.center {
     position: relative;
     z-index: 1;
-}
+  }
 
-.testimonial-carousel .owl-item .testimonial-item {
+  .testimonial-carousel .owl-item .testimonial-item {
     transition: .5s;
-}
+  }
 
-.testimonial-carousel .owl-item.center .testimonial-item {
+  .testimonial-carousel .owl-item.center .testimonial-item {
     background: #FFFFFF !important;
     box-shadow: 0 0 30px #DDDDDD;
-}
-
+  }
 </style>
+
 <body style="color: rgb(0, 0, 0);">
 
-<!-- header section starts -->
-<header class="header_section">
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg custom_nav-container custom_nav-container fixed-top" style="background-color: rgba(255, 255, 255, 0.495);">
-       <a class="navbar-brand" href="../index.html">
-        <img src="../images/tesalogo.png" style="height: 70px; padding: 5px;">
-        <span style="font-family:  Cambria; font-size: 32px;">
-          TESA
-        </span>
-      </a>
-  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-bars rotate" style="font-size: 30px;"></i>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="../index.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-              <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  onclick="scrollToSection('#about')" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-              <i class="fa fa-user"></i> About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="scrollToSection('#event')" style="font-family: 'Arial', sans-serif; font-weight: bold; cursor:pointer">
-              <i class="fa fa-trophy"></i> EVENTS</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Arial', sans-serif; font-weight: bold;">
-              Domains
-            </a>
-            <div class="dropdown-menu p-3" aria-labelledby="teamDropdown">
-              <a class="dropdown-item" href="./Technical.html">Technical</a>
-              <a class="dropdown-item" href="./sports.html">Sports</a>
-              <a class="dropdown-item" href="./tnp.html">T&P</a>
-              <a class="dropdown-item" href="./cultural.html">Cultural</a>
-              <a class="dropdown-item" href="./media.html">Media</a>
-              <a class="dropdown-item" href="./social.html">Social</a>
-              <a class="dropdown-item" href="./editorial.html">Editorial</a>
-              <a class="dropdown-item" href="./studycircle.html">Study Circle</a>
+  <!-- header section starts -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container custom_nav-container fixed-top"
+        style="background-color: rgba(255, 255, 255, 0.495);">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/tesalogo.png" style="height: 70px; padding: 5px;">
+          <span style="font-family:  Cambria; font-size: 32px;">
+            TESA
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars rotate" style="font-size: 30px;"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"
+                style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToSection('#about')"
+                style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                <i class="fa fa-user"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToSection('#event')"
+                style="font-family: 'Arial', sans-serif; font-weight: bold; cursor:pointer">
+                <i class="fa fa-trophy"></i> EVENTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="font-family: 'Arial', sans-serif; font-weight: bold;">
+                Domains
+              </a>
+              <div class="dropdown-menu p-3" aria-labelledby="teamDropdown">
+                <a class="dropdown-item" href="./Technical.html">Technical</a>
+                <a class="dropdown-item" href="./sports.html">Sports</a>
+                <a class="dropdown-item" href="./tnp.html">T&P</a>
+                <a class="dropdown-item" href="./cultural.html">Cultural</a>
+                <a class="dropdown-item" href="./media.html">Media</a>
+                <a class="dropdown-item" href="./social.html">Social</a>
+                <a class="dropdown-item" href="./editorial.html">Editorial</a>
+                <a class="dropdown-item" href="./studycircle.html">Study Circle</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../interview.html"
+                style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                Interveiw Exp</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../startup.html"
+                style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
+                <i class=""></i>Startup</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+  <!-- slider section -->
+  <section class="slider_section" id="home" style="padding:top 40px;">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="detail-box">
+            <p style="font-size: 28px; animation: slideIn 1s ease; font-weight: bold ; ">Welcome to Domain Page of </p>
+            <h1 class="slide-in" style="font-size: 58px;font-weight: bold; font-family:Lato;">
+              Social Team
+            </h1>
+            <p style="animation: slideIn 4s ease;font-size: 18px;font-weight: bold; font-family: times new roman">
+              presented by</p>
+            <h5
+              style="color: rgb(18, 116, 11); animation: slideIn 4s ease; font-size: 24px; font-style:italic;font-weight: bold;">
+              Telecom Engineers Student Association</h5>
+            <p style="animation: slideIn 5s ease; font-size: 20px; font-family: times new roman; padding: top 5px;">--
+              (*****tag line of your domain*******) </p>
+            <div class="btn-box">
+              <a href="" class="btn1" style="animation: fadeIn 4s ease;font-family: serif">
+                Know More
+              </a>
             </div>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="../interview.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-            Interveiw Exp</a>
-          </li>
+            <div style="animation: slideIn 4s ease;font-size: 18px;font-weight: bold; font-family: arial">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus maxime reprehenderit, sed et
+              quisquam expedita cupiditate odit alias ipsam incidunt! Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Odio asperiores maiores officiis amet at.
 
-          <li class="nav-item">
-            <a class="nav-link" href="../startup.html" style="font-family: 'Arial', sans-serif; font-weight: bold;cursor:pointer">
-              <i class=""></i>Startup</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
-<!-- end header section -->
-
-<!-- slider section -->
-<section class="slider_section" id="home" style="padding:top 40px;">
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-6 ">
-            <div class="detail-box">
-              <p style="font-size: 28px; animation: slideIn 1s ease; font-weight: bold ; ">Welcome to Domain Page of </p>
-              <h1 class="slide-in" style="font-size: 58px;font-weight: bold; font-family:Lato;">
-                Social Team
-              </h1>
-              <p style="animation: slideIn 4s ease;font-size: 18px;font-weight: bold; font-family: times new roman">
-                presented by</p>
-              <h5
-                style="color: rgb(18, 116, 11); animation: slideIn 4s ease; font-size: 24px; font-style:italic;font-weight: bold;">
-                Telecom Engineers Student Association</h5>
-              <p style="animation: slideIn 5s ease; font-size: 20px; font-family: times new roman; padding: top 5px;">-- (*****tag line of your domain*******) </p>
-              <div class="btn-box">
-                <a href="" class="btn1" style="animation: fadeIn 4s ease;font-family: serif">
-                  Know More
-                </a>
-              </div>
-              <div style="animation: slideIn 4s ease;font-size: 18px;font-weight: bold; font-family: arial">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus maxime reprehenderit, sed et quisquam expedita cupiditate odit alias ipsam incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores maiores officiis amet at.
-
-              </div>
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="img-box" style="animation: slideout 4s ease;">
-              <img src="../images/tech_bg.png" alt="">
-            </div>
+        </div>
+        <div class="col-md-5">
+          <div class="img-box" style="animation: slideout 4s ease;">
+            <img src="../images/tech_bg.png" alt="">
           </div>
         </div>
       </div>
-</section>
-<!-- end slider section -->
+    </div>
+  </section>
+  <!-- end slider section -->
 
-<section class="banner-section text-center" style="background-color: #333; background-size: cover; background-position: center; color: #fff; padding: 50px;">
-  <h1 class="display-4 font-weight-bold"><span>OUR TEAM</span></h1>
-</section> 
+  <section class="banner-section text-center"
+    style="background-color: #333; background-size: cover; background-position: center; color: #fff; padding: 50px;">
+    <h1 class="display-4 font-weight-bold"><span>OUR TEAM</span></h1>
+  </section>
 
-<section class="container">
-  <div class="row justify-content-around py-4">
-    <div class="col-lg-6 col-md-6 col-sm-12">
-      <div class="card p-4 mb-4">
-        <div class="card-image">
-          <img src="../images/Domain/Social/SOHAM NARULE(Secretary).jpg" alt="profile one" class="img-fluid">
+  <section class="container">
+    <div class="row justify-content-around py-4">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card p-4 mb-4">
+          <div class="card-image">
+            <img src="../images/Domain/Social/SOHAM NARULE(Secretary).jpg" alt="profile one" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2>Soham Narule</h2>
+            <p class="job-title">Social Secretary</p>
+          </div>
         </div>
-        <div class="details">
-          <h2>Soham Narule</h2>
-          <p class="job-title">Social Secretary</p>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card p-4">
+          <div class="card-image">
+            <img src="../images/Domain/Social/Nikhil Chape(Jt.secretary).jpg" alt="profile two" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2>Nikhil Chape</h2>
+            <p class="job-title">Joint Social Secretary</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="col-lg-6 col-md-6 col-sm-12">
-      <div class="card p-4">
-        <div class="card-image">
-          <img src="../images/gaurav_tech.png" alt="profile two" class="img-fluid">
-        </div>
-        <div class="details">
-          <h2>Gaurav Pisal</h2>
-          <p class="job-title">Joint Technical Secretary</p>
-        </div>
+    <div class="container">
+      <div class="alert"
+        style="background-color: #14171a; color: #ffffff; border: 1px solid #25ff09; border-radius: 15px; padding: 15px; margin: 30px; transition: background-color 0.2s ease-in-out; text-align:center"
+        role="alert">
+        <strong>Meet Our Team Members</strong>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="alert" style="background-color: #14171a; color: #ffffff; border: 1px solid #25ff09; border-radius: 15px; padding: 15px; margin: 30px; transition: background-color 0.2s ease-in-out; text-align:center" role="alert" >
-      <strong>Meet Our Team Members</strong> 
-    </div>
-  </div>
- 
-  <div class="client_section" >
+    <div class="client_section">
       <div class="carousel-wrap">
         <div class="owl-carousel client_owl-carousel">
           <div class="item card" style="transform: translate(-50%, 0%); box-shadow: 0 5px 20px rgba(5, 66, 22, 0.6)">
             <div class="card-image">
-              <img src="../images/gaurav_tech.png" alt="profile two" class="img-fluid">
+              <img src="../images/Domain/Social/Rudrayini Deokar(Executive).jpg" alt="profile two" class="img-fluid">
             </div>
             <div class="details">
-              <h2>Gaurav Pisal</h2>
-              <p class="job-title">Joint Technical Secretary</p>
+              <h2>Rudrayini Deokar</h2>
+              <p class="job-title">Social Executive</p>
             </div>
+
           </div>
+
           <div class="item card" style="transform: translate(-50%, 0%); box-shadow: 0 5px 20px rgba(5, 66, 22, 0.6)">
             <div class="card-image">
-              <img src="../images/gaurav_tech.png" alt="profile two" class="img-fluid">
+              <img src="../images/Domain/Social/Sairaj pimpale (Executive).jpg" alt="profile two" class="img-fluid">
             </div>
             <div class="details">
-              <h2>Gaurav Pisal</h2>
-              <p class="job-title">Joint Technical Secretary</p>
+              <h2>Sairaj Pimpale</h2>
+              <p class="job-title">Social Executive</p>
             </div>
           </div>
+
           <div class="item card" style="transform: translate(-50%, 0%); box-shadow: 0 5px 20px rgba(5, 66, 22, 0.6)">
             <div class="card-image">
-              <img src="../images/gaurav_tech.png" alt="profile two" class="img-fluid">
+              <img src="../images/Domain/Social/Shraddha Kolambkar( Executive).jpg" alt="profile two" class="img-fluid">
             </div>
             <div class="details">
-              <h2>Gaurav Pisal</h2>
-              <p class="job-title">Joint Technical Secretary</p>
+              <h2>Shraddha Kolambkar</h2>
+              <p class="job-title">Social Executive</p>
             </div>
           </div>
+
           <div class="item card" style="transform: translate(-50%, 0%); box-shadow: 0 5px 20px rgba(5, 66, 22, 0.6)">
             <div class="card-image">
-              <img src="../images/gaurav_tech.png" alt="profile two" class="img-fluid">
+              <img src="../images/Domain/Social/Malhar ghorpade(head).jpg" alt="profile two" class="img-fluid">
             </div>
             <div class="details">
-              <h2>Gaurav Pisal</h2>
-              <p class="job-title">Joint Technical Secretary</p>
+              <h2>Malhar Ghorpade</h2>
+              <p class="job-title">Social Head</p>
             </div>
           </div>
+
+          <div class="item card" style="transform: translate(-50%, 0%); box-shadow: 0 5px 20px rgba(5, 66, 22, 0.6)">
+            <div class="card-image">
+              <img src="../images/Domain/Social/Renuka Suryawanshi (Head).jpg" alt="profile two" class="img-fluid">
+            </div>
+            <div class="details">
+              <h2>Renuka Suryavanshi</h2>
+              <p class="job-title">Social Head</p>
+            </div>
+          </div>
+
+          <div class="item card" style="transform: translate(-50%, 0%); box-shadow: 0 5px 20px rgba(5, 66, 22, 0.6)">
+            <div class="card-image">
+              <img src="../images/Domain/Social/Sanket Bhore(Head).jpg" alt="profile two" class="img-fluid">
+            </div>
+            <div class="details">
+              <h2>Sanket Bhore</h2>
+              <p class="job-title">Social Head</p>
+            </div>
+          </div>
+
         </div>
       </div>
-  </div>
 
-  <!-- add the excetutives caroauasla here  -->
+      <!-- add the excetutives caroauasla here  -->
 
-</section>
+  </section>
 
-<!-- service section -->
-<section class="service_section layout_padding" id="event">
+  <!-- service section -->
+  <section class="service_section layout_padding" id="event">
     <div class="service_container">
       <div class="container ">
         <div class="heading_container heading_center">
@@ -368,11 +407,11 @@
         </div>
       </div>
     </div>
-</section>
-<!-- end service section -->
+  </section>
+  <!-- end service section -->
 
-<!-- info section -->
-<section class="info_section layout_padding2" id="contact">
+  <!-- info section -->
+  <section class="info_section layout_padding2" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 info_col">
@@ -464,29 +503,29 @@
         </div>
       </div>
     </div>
-</section>
-<!-- end info section -->
+  </section>
+  <!-- end info section -->
 
-<!-- footer section -->
-<section class="footer_section">
+  <!-- footer section -->
+  <section class="footer_section">
     <div class="container">
       <p style="color: rgb(255, 255, 255);">
         &copy; <span id="displayYear" style="color: rgb(255, 255, 255);"> By TESA Tech team</span>
         <a href="">By TESA Tech team</a>
       </p>
     </div>
-</section>
-<!-- footer section -->
+  </section>
+  <!-- footer section -->
 
-<script>
-  function scrollToSection(sectionId) {
-    const section = document.querySelector(sectionId);
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.querySelector(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
       }
     }
-</script>
-  
+  </script>
+
   <!-- Bootstrap JS (placed at the end of the body for faster page loading) -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
@@ -506,4 +545,5 @@
   <!-- custom js -->
   <script type="text/javascript" src="../js/custom.js"></script>
 </body>
+
 </html>
