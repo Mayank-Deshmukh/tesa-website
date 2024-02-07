@@ -805,9 +805,10 @@ a:focus {
 /*team section */
 .team_section {
   text-align: center;
-  background-color: #000000;
-  color: #ffffff;
+  background: #2c7d5686 
 }
+
+
 
 .team_section .heading_container {
   -webkit-box-pack: center;
@@ -822,14 +823,14 @@ a:focus {
 
 .team_section .team_container .box {
   padding: 20px;
-  height: 350px;
+  height: 430px;
   width: 280px;
   border-radius: 15px;
   overflow: hidden;
   transition: all 0.3s ease; /* Improved transition timing */
   margin-top: 45px;
   box-shadow: 0 14px 18px rgba(51, 136, 59, 0.551); /* Adding a subtle box shadow for depth */
-  background-image: url(../images/hod_card.png);
+  background-image: url(../images/Card\ 2.png);
   background-size: cover; /* Using cover to maintain aspect ratio and cover the entire box */
   background-position: center; /* Center the background image */
 }
