@@ -830,7 +830,7 @@ a:focus {
   transition: all 0.3s ease; /* Improved transition timing */
   margin-top: 45px;
   box-shadow: 0 14px 18px rgba(51, 136, 59, 0.551); /* Adding a subtle box shadow for depth */
-  background-image: url(../images/Card\ 2.png);
+  background-image: url(../images/Black\ and\ Orange\ Company\ ID\ Card\ \(1\).png);
   background-size: cover; /* Using cover to maintain aspect ratio and cover the entire box */
   background-position: center; /* Center the background image */
 }
@@ -1146,3 +1146,27 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+.Team-image{
+  position: absolute;
+  top: 87px;
+  left: 55px ;
+  width: 170px; /* Adjust width as needed */
+  height: 215px; /* Adjust height as needed */
+  object-fit: cover;
+  border-radius: 5%;
+}
+.Team-satus{
+  position: absolute;
+                top: 310px;
+                left: 85px ;
+                z-index: 2;
+                font-weight: bold;
+}
+.team-name{
+  position: absolute;
+                top: 330px;
+                left: 85px ;
+                z-index: 2;
+                font-weight: bold;
+}
