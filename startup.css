@@ -639,9 +639,9 @@ a:focus {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    width: 940px;
+    width: 100%;
     margin: auto;
-    padding: 100px 0px;
+    padding: 10% 0%;
   }
   .card-blg {
     background-color: #fff;
